@@ -42,7 +42,7 @@ MAX_SEQ_LEN       = 2048
 INFER_BSZ         = 8
 LOCAL_FILES_ONLY  = False
 
-IMG_DIR = Path("./SVs_sample/SVs_merged")
+IMG_DIR = Path("./SVs_merged")
 
 instruction = (
     "You are given photos of a house captured from different angles.\n"
