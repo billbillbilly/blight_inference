@@ -121,9 +121,13 @@ for file in tqdm(files, total=len(files)):
 
 df = pd.DataFrame(dic)
 df.to_csv("building_detection_results.csv", index=False)
-
 df_stats = df.groupby("parcel_id", as_index=False).agg(detected_building=("is_building", "sum"))
-os.makedirs("detection", exist_ok=True)
-df_stats[df_stats["detected_building"] >= 1].to_csv("detection/1more_buildings_detected.csv", index=False)
-df_stats[df_stats["detected_building"] >= 2].to_csv("detection/2more_buildings_detected.csv", index=False)
-df_stats[df_stats["detected_building"] >= 3].to_csv("detection/3more_buildings_detected.csv", index=False)
+df_stats[df_stats["detected_building"] == 1].to_csv("one_building_detected.csv", index=False)
+df_stats[df_stats["detected_building"] == 2].to_csv("two_building_detected.csv", index=False)
+df_stats[df_stats["detected_building"] == 3].to_csv("three_building_detected.csv", index=False)
+
+# df_stats = df.groupby("parcel_id", as_index=False).agg(detected_building=("is_building", "sum"))
+# os.makedirs("detection", exist_ok=True)
+# df_stats[df_stats["detected_building"] >= 1].to_csv("detection/1more_buildings_detected.csv", index=False)
+# df_stats[df_stats["detected_building"] >= 2].to_csv("detection/2more_buildings_detected.csv", index=False)
+# df_stats[df_stats["detected_building"] >= 3].to_csv("detection/3more_buildings_detected.csv", index=False)
