@@ -9,4 +9,4 @@ fi
 
 echo "Task ${TASK_ID}: processing ${START}..${END}"
 
-python svi.py --start "$START" --end "$END"
+python ./scripts/svi.py --start "$START" --end "$END"
