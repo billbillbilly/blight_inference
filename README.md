@@ -25,11 +25,21 @@ pip install unsloth
 ```
 
 ## Checkpoints
-|HF repo|URLs|inference scripts|
-|---|---:|---|
-|xiaohaoy/qwen_facade_s1|https://huggingface.co/xiaohaoy/qwen_facade_s1|[./inference_qwen.py](inference_qwen.py)|
-|xiaohaoy/qwen_facade_s2|https://huggingface.co/xiaohaoy/qwen_facade_s2||
-|xiaohaoy/qwen_open_s1|https://huggingface.co/xiaohaoy/qwen_open_s1||
-|xiaohaoy/qwen_open_s2|https://huggingface.co/xiaohaoy/qwen_open_s2||
-|xiaohaoy/qwen_roof_s1|https://huggingface.co/xiaohaoy/qwen_roof_s1||
-|xiaohaoy/qwen_roof_s2|https://huggingface.co/xiaohaoy/qwen_roof_s2||
+|HF repo|URLs|
+|---|---|
+|xiaohaoy/qwen_facade_s1|https://huggingface.co/xiaohaoy/qwen_facade_s1|
+|xiaohaoy/qwen_facade_s2|https://huggingface.co/xiaohaoy/qwen_facade_s2|
+|xiaohaoy/qwen_open_s1|https://huggingface.co/xiaohaoy/qwen_open_s1|
+|xiaohaoy/qwen_open_s2|https://huggingface.co/xiaohaoy/qwen_open_s2|
+|xiaohaoy/qwen_roof_s1|https://huggingface.co/xiaohaoy/qwen_roof_s1|
+|xiaohaoy/qwen_roof_s2|https://huggingface.co/xiaohaoy/qwen_roof_s2|
+
+## Usage
+To detect the residential damage condition in Detroit, run the following scripts in the sequence:
+- 1_get_mapillary_svi.sh
+- 2_detect_house.sh
+- 3_prepare_data.sh
+- 4_inference.sh
+
+## Acknowledgement
+The project was supported by the city of Detroit. We acknowledge the blight survey data provided by Detroit Land Bank Authority (DLBA)
