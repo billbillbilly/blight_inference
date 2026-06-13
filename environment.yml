@@ -1,0 +1,29 @@
+name: blight_inference
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - gdal            # geospatial backend for geopandas/fiona
+  - pip:
+      # PyTorch with CUDA (adjust cu121/cu128/cu130 to match your driver)
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch>=2.0
+      - torchvision
+      - torchaudio
+      # Vision-language model fine-tuning / inference
+      - unsloth
+      - transformers
+      - bitsandbytes
+      - xformers
+      - triton; sys_platform == 'linux'
+      # Geospatial
+      - geopandas
+      - urban-worm
+      # Data / utilities
+      - pandas
+      - numpy
+      - pillow
+      - tqdm
+      - huggingface_hub
