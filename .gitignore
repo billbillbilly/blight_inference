@@ -1,2 +1,6 @@
 images/
+data/
+paper/
 .DS_Store
+model_comparison/
+codex_visual_review.py
