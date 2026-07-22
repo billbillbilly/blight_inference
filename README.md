@@ -1,4 +1,4 @@
-[![DOI](https://sandbox.zenodo.org/badge/1258695267.svg)](https://handle.test.datacite.org/10.5072/zenodo.570745)
+[![DOI](https://zenodo.org/badge/1258695267.svg)](https://doi.org/10.5281/zenodo.21497009)
 
 # Blight Inference
 
@@ -175,3 +175,6 @@ Notes:
 ## Acknowledgement
 
 The project was supported by the City of Detroit. We acknowledge the blight survey data provided by the Detroit Land Bank Authority (DLBA).
+
+## Citation
+Xiaohao Yang, Tian, A.& North, G. (2026). blight_inference: v1.0 (Version v1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.21497010
