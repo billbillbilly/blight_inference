@@ -1,3 +1,5 @@
+[![DOI](https://sandbox.zenodo.org/badge/1258695267.svg)](https://handle.test.datacite.org/10.5072/zenodo.570745)
+
 # Blight Inference
 
 Detect residential blight/damage conditions in Detroit from street view imagery (SVI) using fine-tuned vision models.
