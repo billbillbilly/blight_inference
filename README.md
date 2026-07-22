@@ -49,7 +49,7 @@ Task/Stage     Split        N       cls1      cls2     minority%
 |Inference time (second per image)|9.55ms|35.37ms|7.88ms|77.25ms|2.72s|0.24s|0.34s|
 
 ## 3 Performance comparison
-![comparison](imgs/all_models_by_part_macro_f1_ordinal_mae%20copy.png)
+![comparison](imgs/all_models_by_part_macro_f1_ordinal_mae.svg)
 
 ## 4 Pipeline
 
