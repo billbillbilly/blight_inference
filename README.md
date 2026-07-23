@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/1258695267.svg)](https://doi.org/10.5281/zenodo.21497009)
+[![DOI](https://zenodo.org/badge/1258695267.svg)](https://doi.org/10.5281/zenodo.21497010)
 
 # Blight Inference
 
